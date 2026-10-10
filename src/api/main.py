@@ -66,6 +66,17 @@ def create_app(fixture_graph=None, config: dict | None = None) -> FastAPI:
             return export_graph(app.state.client, ids, limits["max_nodes"], limits["max_edges"])
 
         app.state.get_graph = get_graph
+
+        def entity_graph(id: str):
+            from src.graph.client import Client
+            from src.graph.loaders import export_graph
+
+            if app.state.client is None:
+                app.state.client = Client()
+            limits = cfg["limits"]
+            return export_graph(app.state.client, [id], 1, limits["max_edges"])
+
+        app.state.entity_graph = entity_graph
     if os.getenv("CTIG_INDEX"):
         from src.search.semantic_index import SemanticIndex
 

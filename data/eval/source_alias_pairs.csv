@@ -1,0 +1,101 @@
+left,right,label,left_id,right_id,similarity,evidence
+Inception,Inception Framework,1,intrusion-set--ead23196-d7b6-4ce6-a124-4ab4b67d81bd,intrusion-set--ead23196-d7b6-4ce6-a124-4ab4b67d81bd,0.8344979286193848,MITRE ATT&CK v17.1; STIX source identities
+Magic Hound,Mint Sandstorm,1,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,0.25122830271720886,MITRE ATT&CK v17.1; STIX source identities
+Transparent Tribe,ProjectM,1,intrusion-set--e44e0985-bc65-4a8f-b578-211c858128e3,intrusion-set--e44e0985-bc65-4a8f-b578-211c858128e3,0.24349752068519592,MITRE ATT&CK v17.1; STIX source identities
+MuddyWater,Earth Vetala,1,intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2,intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2,0.20290803909301758,MITRE ATT&CK v17.1; STIX source identities
+APT28,STRONTIUM,1,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,0.22371578216552734,MITRE ATT&CK v17.1; STIX source identities
+APT5,UNC2630,1,intrusion-set--c1aab4c9-4c34-4f4f-8541-d529e46a07f9,intrusion-set--c1aab4c9-4c34-4f4f-8541-d529e46a07f9,0.2877575159072876,MITRE ATT&CK v17.1; STIX source identities
+Gamaredon Group,Shuckworm,1,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,0.10954692959785461,MITRE ATT&CK v17.1; STIX source identities
+Threat Group-1314,TG-1314,1,intrusion-set--d519164e-f5fa-4b8c-a1fb-cf0172ad0983,intrusion-set--d519164e-f5fa-4b8c-a1fb-cf0172ad0983,0.6199114322662354,MITRE ATT&CK v17.1; STIX source identities
+Earth Lusca,Charcoal Typhoon,1,intrusion-set--cc613a49-9bfa-4e22-98d1-15ffbb03f034,intrusion-set--cc613a49-9bfa-4e22-98d1-15ffbb03f034,0.24643471837043762,MITRE ATT&CK v17.1; STIX source identities
+TA505,Hive0065,1,intrusion-set--7eda3dd8-b09b-4705-8090-c2ad9fb8c14d,intrusion-set--7eda3dd8-b09b-4705-8090-c2ad9fb8c14d,0.4496867060661316,MITRE ATT&CK v17.1; STIX source identities
+Leviathan,TEMP.Periscope,1,intrusion-set--7113eaa5-ba79-4fb3-b68a-398ee9cd698e,intrusion-set--7113eaa5-ba79-4fb3-b68a-398ee9cd698e,0.09244965761899948,MITRE ATT&CK v17.1; STIX source identities
+Wizard Spider,Periwinkle Tempest,1,intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7,intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7,0.24278688430786133,MITRE ATT&CK v17.1; STIX source identities
+Akira,GOLD SAHARA,1,intrusion-set--46bb06cb-f2d9-4b37-8c92-a27e224ad90d,intrusion-set--46bb06cb-f2d9-4b37-8c92-a27e224ad90d,0.17295271158218384,MITRE ATT&CK v17.1; STIX source identities
+Saint Bear,UAC-0056,1,intrusion-set--674582ec-51c4-42ce-b409-797239e37a2a,intrusion-set--674582ec-51c4-42ce-b409-797239e37a2a,0.0444808229804039,MITRE ATT&CK v17.1; STIX source identities
+MuddyWater,Mango Sandstorm,1,intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2,intrusion-set--269e8108-68c6-4f99-b911-14b2e765dec2,0.4266766905784607,MITRE ATT&CK v17.1; STIX source identities
+Machete,El Machete,1,intrusion-set--38863958-a201-4ce1-9dbe-539b0b6804e0,intrusion-set--38863958-a201-4ce1-9dbe-539b0b6804e0,0.8014756441116333,MITRE ATT&CK v17.1; STIX source identities
+APT28,Tsar Team,1,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,0.11101249605417252,MITRE ATT&CK v17.1; STIX source identities
+Gamaredon Group,IRON TILDEN,1,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,0.1966594010591507,MITRE ATT&CK v17.1; STIX source identities
+Threat Group-3390,LuckyMouse,1,intrusion-set--fb366179-766c-4a4a-afa1-52bff1fd601c,intrusion-set--fb366179-766c-4a4a-afa1-52bff1fd601c,0.17146949470043182,MITRE ATT&CK v17.1; STIX source identities
+Sandworm Team,IRON VIKING,1,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,0.2780996561050415,MITRE ATT&CK v17.1; STIX source identities
+Mustang Panda,TA416,1,intrusion-set--420ac20b-f2b9-42b8-aa1a-6d4b72895ca4,intrusion-set--420ac20b-f2b9-42b8-aa1a-6d4b72895ca4,0.2601839601993561,MITRE ATT&CK v17.1; STIX source identities
+Ke3chang,RoyalAPT,1,intrusion-set--6713ab67-e25b-49cc-808d-2b36d4fbc35c,intrusion-set--6713ab67-e25b-49cc-808d-2b36d4fbc35c,0.3157496452331543,MITRE ATT&CK v17.1; STIX source identities
+Magic Hound,Charming Kitten,1,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,0.27032724022865295,MITRE ATT&CK v17.1; STIX source identities
+Sandworm Team,FROZENBARENTS,1,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,0.13098940253257751,MITRE ATT&CK v17.1; STIX source identities
+Wizard Spider,Grim Spider,1,intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7,intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7,0.6325362324714661,MITRE ATT&CK v17.1; STIX source identities
+APT28,Swallowtail,1,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c,0.10562241077423096,MITRE ATT&CK v17.1; STIX source identities
+Daggerfly,BRONZE HIGHLAND,1,intrusion-set--f3be6240-f68e-47e1-90d2-ad8f3b3bb8a6,intrusion-set--f3be6240-f68e-47e1-90d2-ad8f3b3bb8a6,0.22746294736862183,MITRE ATT&CK v17.1; STIX source identities
+OilRig,Hazel Sandstorm,1,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,0.26952892541885376,MITRE ATT&CK v17.1; STIX source identities
+Volt Typhoon,Vanguard Panda,1,intrusion-set--174279b4-399f-4ddb-966e-5efedd1dd5f2,intrusion-set--174279b4-399f-4ddb-966e-5efedd1dd5f2,0.23334094882011414,MITRE ATT&CK v17.1; STIX source identities
+Turla,Venomous Bear,1,intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6,intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6,0.14506319165229797,MITRE ATT&CK v17.1; STIX source identities
+Gamaredon Group,Armageddon,1,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,intrusion-set--2e290bfe-93b5-48ce-97d6-edcd6d32b7cf,0.22798144817352295,MITRE ATT&CK v17.1; STIX source identities
+OilRig,Helix Kitten,1,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,-0.008970968425273895,MITRE ATT&CK v17.1; STIX source identities
+Silent Librarian,TA407,1,intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384,intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384,0.11282810568809509,MITRE ATT&CK v17.1; STIX source identities
+Star Blizzard,Callisto Group,1,intrusion-set--9b36c218-4d80-4ec6-a68d-cc2886bbe410,intrusion-set--9b36c218-4d80-4ec6-a68d-cc2886bbe410,0.20679382979869843,MITRE ATT&CK v17.1; STIX source identities
+FIN6,Magecart Group 6,1,intrusion-set--2a7914cf-dff3-428d-ab0f-1014d1c28aeb,intrusion-set--2a7914cf-dff3-428d-ab0f-1014d1c28aeb,0.2857435345649719,MITRE ATT&CK v17.1; STIX source identities
+OilRig,ITG13,1,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,0.2939699590206146,MITRE ATT&CK v17.1; STIX source identities
+Ke3chang,Playful Dragon,1,intrusion-set--6713ab67-e25b-49cc-808d-2b36d4fbc35c,intrusion-set--6713ab67-e25b-49cc-808d-2b36d4fbc35c,0.13316524028778076,MITRE ATT&CK v17.1; STIX source identities
+APT-C-23,Two-tailed Scorpion,1,intrusion-set--8332952e-b86b-486b-acc3-1c2a85d39394,intrusion-set--8332952e-b86b-486b-acc3-1c2a85d39394,0.11645548045635223,MITRE ATT&CK v17.1; STIX source identities
+Dragonfly,IRON LIBERTY,1,intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1,intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1,0.19543173909187317,MITRE ATT&CK v17.1; STIX source identities
+Volatile Cedar,Lebanese Cedar,1,intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3,intrusion-set--b2e34388-6938-4c59-a702-80dc219e15e3,0.6358597278594971,MITRE ATT&CK v17.1; STIX source identities
+APT37,Group123,1,intrusion-set--4a2ce82e-1a74-468a-a6fb-bbead541383c,intrusion-set--4a2ce82e-1a74-468a-a6fb-bbead541383c,0.35702091455459595,MITRE ATT&CK v17.1; STIX source identities
+Silent Librarian,COBALT DICKENS,1,intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384,intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384,0.1929328888654709,MITRE ATT&CK v17.1; STIX source identities
+APT32,OceanLotus,1,intrusion-set--247cb30b-955f-42eb-97a5-a89fef69341e,intrusion-set--247cb30b-955f-42eb-97a5-a89fef69341e,0.060490768402814865,MITRE ATT&CK v17.1; STIX source identities
+APT29,IRON RITUAL,1,intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542,intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542,-0.03647512197494507,MITRE ATT&CK v17.1; STIX source identities
+Threat Group-3390,Iron Tiger,1,intrusion-set--fb366179-766c-4a4a-afa1-52bff1fd601c,intrusion-set--fb366179-766c-4a4a-afa1-52bff1fd601c,0.13824689388275146,MITRE ATT&CK v17.1; STIX source identities
+Sandworm Team,Telebots,1,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,0.2278452217578888,MITRE ATT&CK v17.1; STIX source identities
+APT29,SolarStorm,1,intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542,intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542,0.16630659997463226,MITRE ATT&CK v17.1; STIX source identities
+Kimsuky,Black Banshee,1,intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f,intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f,0.36148709058761597,MITRE ATT&CK v17.1; STIX source identities
+Putter Panda,APT2,1,intrusion-set--5ce5392a-3a6c-4e07-9df3-9b6a9159ac45,intrusion-set--5ce5392a-3a6c-4e07-9df3-9b6a9159ac45,0.16563579440116882,MITRE ATT&CK v17.1; STIX source identities
+Magic Hound,Phosphorus,1,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,intrusion-set--f9d6633a-55e6-4adc-9263-6ae080421a13,0.14616647362709045,MITRE ATT&CK v17.1; STIX source identities
+TA577,APT39,0,intrusion-set--13ef3485-70d2-4567-b934-0e83c1eafcf1,intrusion-set--44e43fad-ffcb-4210-abcf-eaaed9735f80,0.4006308317184448,MITRE ATT&CK v17.1; STIX source identities
+DarkHydrus,Darkhotel,0,intrusion-set--6b9ebeb5-20bf-48b0-afb7-988d769a2f01,intrusion-set--9e729a7e-0dd6-4097-95bf-db8d64911383,0.6517630815505981,MITRE ATT&CK v17.1; STIX source identities
+RTM,Sowbug,0,intrusion-set--c416b28c-103b-4df1-909e-78089a7e0e5f,intrusion-set--d1acfbb3-647b-4723-9154-800ec119006e,0.19311586022377014,MITRE ATT&CK v17.1; STIX source identities
+POLONIUM,WIRTE,0,intrusion-set--5f3d0238-d058-44a9-8812-3dd1b6741a8c,intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1,0.1992534101009369,MITRE ATT&CK v17.1; STIX source identities
+LazyScripter,LuminousMoth,0,intrusion-set--abc5a1d4-f0dc-49d1-88a1-4a80e478bb03,intrusion-set--b7f627e2-0817-4cd5-8d50-e75f8aa85cc6,0.2287123054265976,MITRE ATT&CK v17.1; STIX source identities
+Agrius,CopyKittens,0,intrusion-set--b8137919-38cb-4db0-90f3-437be885faba,intrusion-set--dcd81c6e-ebf7-4a16-93e0-9a97fa49c88a,0.09446574747562408,MITRE ATT&CK v17.1; STIX source identities
+Higaisa,APT19,0,intrusion-set--54dfec3e-6464-4f74-9d69-b7c817b7e5a3,intrusion-set--fe8796a4-2a02-41a0-9d27-7aa1e995feb6,0.1550728678703308,MITRE ATT&CK v17.1; STIX source identities
+Mustard Tempest,Winnti Group,0,intrusion-set--0d4ac089-ced4-4cc4-a989-174d08e6d030,intrusion-set--c5947e1c-1cbc-434c-94b8-27c7e3be0fff,0.18929189443588257,MITRE ATT&CK v17.1; STIX source identities
+NEODYMIUM,Carbanak,0,intrusion-set--025bdaa9-897d-4bad-afa6-013ba5734653,intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c,0.2373354136943817,MITRE ATT&CK v17.1; STIX source identities
+OilRig,Saint Bear,0,intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d,intrusion-set--674582ec-51c4-42ce-b409-797239e37a2a,0.21025647222995758,MITRE ATT&CK v17.1; STIX source identities
+ALLANITE,LAPSUS$,0,intrusion-set--190242d7-73fc-4738-af68-20162f7a5aae,intrusion-set--d8bc9788-4f7d-41a9-9e9d-ee1ea18a8cf7,0.09328643232584,MITRE ATT&CK v17.1; STIX source identities
+Moafee,WIRTE,0,intrusion-set--2e5d3a83-fe00-41a5-9b60-237efc84832f,intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1,0.28375282883644104,MITRE ATT&CK v17.1; STIX source identities
+Carbanak,Chimera,0,intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c,intrusion-set--8c1f0187-0826-4320-bddc-5f326cfcfe2c,0.27320677042007446,MITRE ATT&CK v17.1; STIX source identities
+Silent Librarian,APT5,0,intrusion-set--90784c1e-4aba-40eb-9adf-7556235e6384,intrusion-set--c1aab4c9-4c34-4f4f-8541-d529e46a07f9,0.1739538162946701,MITRE ATT&CK v17.1; STIX source identities
+Mustard Tempest,PittyTiger,0,intrusion-set--0d4ac089-ced4-4cc4-a989-174d08e6d030,intrusion-set--fe98767f-9df8-42b9-83c9-004b1dec8647,0.5204167366027832,MITRE ATT&CK v17.1; STIX source identities
+Patchwork,Cobalt Group,0,intrusion-set--17862c7d-9e60-48a0-b48e-da4dc4c3f6b0,intrusion-set--dc6fe6ee-04c2-49be-ba3d-f38d2463c02a,0.16579243540763855,MITRE ATT&CK v17.1; STIX source identities
+Scattered Spider,Deep Panda,0,intrusion-set--44d37b89-a739-4810-9111-0d2617a8939b,intrusion-set--a653431d-6a5e-4600-8ad3-609b5af57064,0.1715182363986969,MITRE ATT&CK v17.1; STIX source identities
+GALLIUM,Transparent Tribe,0,intrusion-set--06a11b7e-2a36-47fe-8d3e-82c265df3258,intrusion-set--e44e0985-bc65-4a8f-b578-211c858128e3,0.20310086011886597,MITRE ATT&CK v17.1; STIX source identities
+Carbanak,Ke3chang,0,intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c,intrusion-set--6713ab67-e25b-49cc-808d-2b36d4fbc35c,0.22936874628067017,MITRE ATT&CK v17.1; STIX source identities
+Salt Typhoon,Blue Mockingbird,0,intrusion-set--1c3dcf91-b859-4aae-a09c-ae26dc8b6390,intrusion-set--73a80fab-2aa3-48e0-a4d0-3a4828200aee,0.19589769840240479,MITRE ATT&CK v17.1; STIX source identities
+Carbanak,GOLD SOUTHFIELD,0,intrusion-set--55033a4d-3ffe-46b2-99b4-2c1541e9ce1c,intrusion-set--c77c5576-ca19-42ed-a36f-4b4486a84133,0.2814868688583374,MITRE ATT&CK v17.1; STIX source identities
+APT12,Thrip,0,intrusion-set--c47f937f-1022-4f42-8525-e7a4779a14cb,intrusion-set--d69e568e-9ac8-4c08-b32c-d93b43ba9172,0.2601560950279236,MITRE ATT&CK v17.1; STIX source identities
+SideCopy,Play,0,intrusion-set--03be849d-b5a2-4766-9dda-48976bae5710,intrusion-set--ecbf507f-6786-4121-a4cc-0fd6a8d3a29d,0.12930309772491455,MITRE ATT&CK v17.1; STIX source identities
+APT18,Sea Turtle,0,intrusion-set--38fd6a28-3353-4f2b-bb2b-459fecd5c648,intrusion-set--56a05d27-4d47-418a-b330-781c5614f202,0.11117030680179596,MITRE ATT&CK v17.1; STIX source identities
+Moses Staff,Star Blizzard,0,intrusion-set--4c4a7846-45d5-4761-8eea-725fa989914c,intrusion-set--9b36c218-4d80-4ec6-a68d-cc2886bbe410,0.19532343745231628,MITRE ATT&CK v17.1; STIX source identities
+Elderwood,FIN7,0,intrusion-set--03506554-5f37-4f8f-9ce4-0e9f01a1b484,intrusion-set--3753cc21-2dae-4dfb-8481-d004e74502cc,0.14908309280872345,MITRE ATT&CK v17.1; STIX source identities
+Cobalt Group,FIN8,0,intrusion-set--dc6fe6ee-04c2-49be-ba3d-f38d2463c02a,intrusion-set--fd19bd82-1b14-49a1-a176-6cdc46b8a826,0.2920679450035095,MITRE ATT&CK v17.1; STIX source identities
+APT17,BRONZE BUTLER,0,intrusion-set--090242d7-73fc-4738-af68-20162f7a5aae,intrusion-set--93f52415-0fe4-4d3d-896c-fc9b8e88ab90,0.11886204034090042,MITRE ATT&CK v17.1; STIX source identities
+Moafee,FIN5,0,intrusion-set--2e5d3a83-fe00-41a5-9b60-237efc84832f,intrusion-set--85403903-15e0-4f9f-9be4-a259ecad4022,0.16789522767066956,MITRE ATT&CK v17.1; STIX source identities
+Bouncing Golf,Aquatic Panda,0,intrusion-set--049cef3b-22d5-4be6-b50c-9839c7a34fdd,intrusion-set--64b52e7d-b2c4-4a02-9372-08a463f5dc11,0.08753694593906403,MITRE ATT&CK v17.1; STIX source identities
+Moafee,Stealth Falcon,0,intrusion-set--2e5d3a83-fe00-41a5-9b60-237efc84832f,intrusion-set--894aab42-3371-47b1-8859-a4a074c804c8,0.2707691490650177,MITRE ATT&CK v17.1; STIX source identities
+Moses Staff,Equation,0,intrusion-set--4c4a7846-45d5-4761-8eea-725fa989914c,intrusion-set--96e239be-ad99-49eb-b127-3007b8c1bec9,0.0743732750415802,MITRE ATT&CK v17.1; STIX source identities
+Akira,Ember Bear,0,intrusion-set--46bb06cb-f2d9-4b37-8c92-a27e224ad90d,intrusion-set--a7f57cc1-4540-4429-823f-f4e56b8473c9,0.13796105980873108,MITRE ATT&CK v17.1; STIX source identities
+Orangeworm,APT16,0,intrusion-set--5636b7b3-d99b-4edd-aa05-ee649c1d4ef1,intrusion-set--d6e88e18-81e8-4709-82d8-973095da1e70,0.2058616429567337,MITRE ATT&CK v17.1; STIX source identities
+Sidewinder,PROMETHIUM,0,intrusion-set--3fc023b2-c5cc-481d-9c3e-70141ae1a87e,intrusion-set--efed95ba-d7e8-47ff-8c53-99c42426ee7c,0.1838359534740448,MITRE ATT&CK v17.1; STIX source identities
+Saint Bear,LuminousMoth,0,intrusion-set--674582ec-51c4-42ce-b409-797239e37a2a,intrusion-set--b7f627e2-0817-4cd5-8d50-e75f8aa85cc6,0.13736377656459808,MITRE ATT&CK v17.1; STIX source identities
+Sandworm Team,Rancor,0,intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192,intrusion-set--f40eb8ce-2a74-4e56-89a1-227021410142,0.1660788655281067,MITRE ATT&CK v17.1; STIX source identities
+TA577,WIRTE,0,intrusion-set--13ef3485-70d2-4567-b934-0e83c1eafcf1,intrusion-set--f8cb7b36-62ef-4488-8a6d-a7033e3271c1,0.21738329529762268,MITRE ATT&CK v17.1; STIX source identities
+Mustard Tempest,Agrius,0,intrusion-set--0d4ac089-ced4-4cc4-a989-174d08e6d030,intrusion-set--b8137919-38cb-4db0-90f3-437be885faba,0.2879793345928192,MITRE ATT&CK v17.1; STIX source identities
+TeamTNT,TA578,0,intrusion-set--35d1b3be-49d4-42f1-aaa6-ef159c880bca,intrusion-set--a5cfbc79-316c-42f2-915d-6e8fef4085f8,0.18466898798942566,MITRE ATT&CK v17.1; STIX source identities
+Mustang Panda,BlackOasis,0,intrusion-set--420ac20b-f2b9-42b8-aa1a-6d4b72895ca4,intrusion-set--da49b9f1-ca99-443f-9728-0a074db66850,0.28092119097709656,MITRE ATT&CK v17.1; STIX source identities
+ALLANITE,DarkVishnya,0,intrusion-set--190242d7-73fc-4738-af68-20162f7a5aae,intrusion-set--813636db-3939-4a45-bea9-6113e970c029,0.2531915307044983,MITRE ATT&CK v17.1; STIX source identities
+Windshift,APT-C-36,0,intrusion-set--afec6dc3-a18e-4b62-b1a4-5510e1a498d1,intrusion-set--c4d50cdf-87ce-407d-86d8-862883485842,0.00919371098279953,MITRE ATT&CK v17.1; STIX source identities
+INC Ransom,Ajax Security Team,0,intrusion-set--cb41e991-65f4-4668-a65f-f4200545b5a1,intrusion-set--fa19de15-6169-428d-9cd6-3ca3d56075b7,0.16622242331504822,MITRE ATT&CK v17.1; STIX source identities
+Malteiro,DragonOK,0,intrusion-set--bf668120-e9a6-4017-a014-bfc0f5232656,intrusion-set--f3bdec95-3d62-42d9-a840-29630f6cdc1a,0.14792901277542114,MITRE ATT&CK v17.1; STIX source identities
+Moafee,Storm-1811,0,intrusion-set--2e5d3a83-fe00-41a5-9b60-237efc84832f,intrusion-set--319fd652-edde-46b2-9987-3519493989f5,0.15680810809135437,MITRE ATT&CK v17.1; STIX source identities
+Naikon,Malteiro,0,intrusion-set--2a158b0a-7ef8-43cb-9985-bf34d1e12050,intrusion-set--bf668120-e9a6-4017-a014-bfc0f5232656,0.33035171031951904,MITRE ATT&CK v17.1; STIX source identities
+DarkVishnya,Wizard Spider,0,intrusion-set--813636db-3939-4a45-bea9-6113e970c029,intrusion-set--dd2d9ca6-505b-4860-a604-233685b802c7,0.2766619920730591,MITRE ATT&CK v17.1; STIX source identities
+Winter Vivern,Moonstone Sleet,0,intrusion-set--75a07184-a7e5-4222-95a1-a04dbc96a29c,intrusion-set--e6db1e55-b199-4b6b-8633-989345ee45e0,0.3317101001739502,MITRE ATT&CK v17.1; STIX source identities
+FIN6,Malteiro,0,intrusion-set--2a7914cf-dff3-428d-ab0f-1014d1c28aeb,intrusion-set--bf668120-e9a6-4017-a014-bfc0f5232656,0.26660609245300293,MITRE ATT&CK v17.1; STIX source identities

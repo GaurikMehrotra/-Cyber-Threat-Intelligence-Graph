@@ -1,0 +1,13 @@
+{
+  "status": "evaluated",
+  "labeled_pairs": 100,
+  "precision": 0.0,
+  "recall": 0.0,
+  "false_merge_rate": null,
+  "definition": "False merges / accepted merges. Labels must be independently reviewed; a false merge is worse than a missed alias.",
+  "label_kind": "source-reference (silver), not human-reviewed",
+  "seed": 42,
+  "threshold": 0.92,
+  "model": "sentence-transformers/all-MiniLM-L6-v2@c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "caveat": "Distinct STIX identities do not prove distinct real-world actors. Random negatives can be easier than analyst-review candidates. No threshold tuning on this set."
+}

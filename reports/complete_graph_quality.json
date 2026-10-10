@@ -1,0 +1,41 @@
+{
+  "node_count": 14441,
+  "edge_count": 41399,
+  "duplicate_identifiers": 4,
+  "orphans": 789,
+  "invalid_iocs": [],
+  "nodes_missing_provenance": 0,
+  "edges_missing_provenance": 0,
+  "counts_by_node_type": {
+    "Malware": 785,
+    "Tool": 93,
+    "Technique": 887,
+    "ThreatActor": 173,
+    "Campaign": 50,
+    "Vulnerability": 1740,
+    "Product": 9733,
+    "Weakness": 976,
+    "Report": 1,
+    "Domain": 1,
+    "IP": 1,
+    "FileHash": 1
+  },
+  "counts_by_relationship_type": {
+    "USES": 18344,
+    "ATTRIBUTED_TO": 24,
+    "AFFECTS": 21168,
+    "HAS_WEAKNESS": 1857,
+    "MENTIONED_IN": 4,
+    "COMMUNICATES_WITH": 1,
+    "RESOLVES_TO": 1
+  },
+  "source_node_coverage": {
+    "attack:v17.1": 1980,
+    "cisa-kev": 2659,
+    "nvd": 10201,
+    "mitre-cwe": 968,
+    "attack:fixture-old": 8,
+    "synthetic-report": 6
+  },
+  "rejected_indicator_count": 0
+}

@@ -78,6 +78,9 @@ def parser() -> argparse.ArgumentParser:
     pp.add_argument("--old-tag", default="v16.1")
     pp.add_argument("--new-tag", default="v17.1")
     pp.add_argument("--with-nvd", action="store_true")
+    pp.add_argument(
+        "--kev-mirror", action="store_true", help="Use CISA's official CC0 GitHub mirror"
+    )
     pp.add_argument("--cwe-version", default="4.17")
     pp.add_argument("--output", default="data/processed/public-graph.json")
     return p
@@ -98,7 +101,7 @@ def main() -> None:
             raise SystemExit(
                 "Read DATA_SOURCES.md and current publisher terms, then explicitly pass --accept-source-terms"
             )
-        from src.ingest.collect import Collector, collect_attack, collect_scoped_nvd
+        from src.ingest.collect import Collector, collect_attack, collect_kev_nvd
 
         c = Collector(
             delay=limits["feed_delay_seconds"],
@@ -124,6 +127,8 @@ def main() -> None:
             kev = json.loads(
                 c.fetch(
                     "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+                    if not args.kev_mirror
+                    else "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
                 )
             )
             (raw / "kev.json").write_text(json.dumps(kev))
@@ -143,7 +148,7 @@ def main() -> None:
                 for x in kev["vulnerabilities"]
                 if int(x["cveID"].split("-")[1]) >= current - limits["nvd_years"]
             ]
-            nvd = collect_scoped_nvd(c, cves, limits["nvd_cve_limit"])
+            nvd = collect_kev_nvd(c, cves, limits["nvd_cve_limit"])
             (raw / "nvd.json").write_text(json.dumps(nvd))
             graph.merge(
                 parse_nvd(

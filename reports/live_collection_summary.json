@@ -1,0 +1,10 @@
+{
+  "kev_catalog_version": "2026.10.08",
+  "kev_entries": 1739,
+  "nvd_scoped_cves": 1035,
+  "nvd_missing_cve_ids": [],
+  "service_nodes": 3501,
+  "service_edges": 20206,
+  "scope": "ATT&CK v17.1 all domains, full KEV, CWE 4.17, KEV CVE IDs from 2021 onward; bounded UI includes 100 recent KEV IDs and their products/weaknesses",
+  "nvd_terms_status": "Current official documentation blocked; API availability observed, numeric limits and terms not certified"
+}

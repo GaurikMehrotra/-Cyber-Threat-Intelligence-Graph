@@ -25,3 +25,7 @@ Quality counts duplicate normalized identifiers, orphan nodes, invalid IOCs, mis
 Python RSS/peak RSS and container memory are cloud measurements only. On the i3/8GB laptop rerun the same seed/config and `docker stats --no-stream`; close unrelated apps, run one experiment at a time, and record versions/system specs. Docker memory is capped at 2GiB; CPU model batch16/threads2; dense TF-IDF bound is 5,000 x 10,000 float32 (~200MB); MiniLM index is 5,000 x384 (~7.7MB). The target is <6GB total, but laptop peak memory is not certified by cloud runs.
 
 Committed reports contain aggregate statistics only. Raw feeds/graphs, model caches and full prediction candidate rankings stay ignored. See reports/VALIDATION.md for actual outcomes and pending independent evaluations.
+
+## Source-reference checks
+
+`scripts/source_reference_eval.py` separately creates 100 reproducibly sampled source-identity alias pairs and 30 questions with answers read directly from official STIX/CISA records, independently of the graph parser. These are silver labels, not hand-verified truth; distinct STIX IDs can still refer to related real-world actors. Fifty alias positives and fifty random negatives are evaluated at the unchanged 0.92 threshold. The model accepted no pairs: recall 0 and accepted-pair false-merge rate undefined. The authoritative alias-data path remains the first resolution step. Golden source questions achieved 30/30. Keep the original blank human templates for stronger independent evaluation.

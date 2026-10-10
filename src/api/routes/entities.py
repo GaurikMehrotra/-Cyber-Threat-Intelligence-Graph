@@ -65,6 +65,13 @@ def edges_public(g, ids: set[str]) -> list[dict]:
 
 @router.get("/entity")
 def entity(request: Request, id: str = Query(max_length=512)) -> dict:
+    if hasattr(request.app.state, "entity_graph"):
+        try:
+            return node(request.app.state.entity_graph(refang(id)), id).public()
+        except HTTPException:
+            raise
+        except Exception as exc:
+            raise HTTPException(503, "Graph backend unavailable") from exc
     return node(graph(request), id).public()
 
 

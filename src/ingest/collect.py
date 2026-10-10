@@ -19,7 +19,10 @@ PUBLISHERS = frozenset(
     }
 )
 SOURCE_PATHS = {
-    "raw.githubusercontent.com": ("/mitre-attack/attack-stix-data/",),
+    "raw.githubusercontent.com": (
+        "/mitre-attack/attack-stix-data/",
+        "/cisagov/kev-data/main/known_exploited_vulnerabilities.json",
+    ),
     "www.cisa.gov": ("/sites/default/files/feeds/known_exploited_vulnerabilities.json",),
     "services.nvd.nist.gov": ("/rest/json/cves/2.0",),
     "cwe.mitre.org": ("/data/xml/",),
@@ -148,3 +151,39 @@ def collect_scoped_nvd(collector: Collector, cve_ids: list[str], limit: int = 30
         )
         rows.extend(data.get("vulnerabilities", []))
     return {"vulnerabilities": rows}
+
+
+def collect_kev_nvd(collector: Collector, cve_ids: list[str], limit: int = 3000) -> dict:
+    """Page through NVD's KEV filter, retaining only the explicit recent-CVE scope.
+
+    This avoids one request per CVE. NVD and CISA catalogs can update at different
+    times; missing requested IDs are returned explicitly rather than invented.
+    """
+    import re
+
+    wanted = set(cve_ids)
+    if len(wanted) > limit or any(not re.fullmatch(r"CVE-\d{4}-\d{4,}", x) for x in wanted):
+        raise ValueError("Invalid or excessive NVD scope")
+    collector.delay = max(collector.delay, 6.1)
+    rows = []
+    start = 0
+    while wanted:
+        data = json.loads(
+            collector.fetch(
+                "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev&resultsPerPage=2000"
+                f"&startIndex={start}",
+                os.getenv("NVD_API_KEY"),
+            )
+        )
+        page = data.get("vulnerabilities", [])
+        total = int(data["totalResults"])
+        if total > limit:
+            raise ValueError("NVD KEV catalog exceeds configured collection bound")
+        if int(data["startIndex"]) != start or not page and start < total:
+            raise ValueError("Inconsistent NVD pagination")
+        rows.extend(x for x in page if x["cve"]["id"] in wanted)
+        start += len(page)
+        if start >= total:
+            break
+    found = {x["cve"]["id"] for x in rows}
+    return {"vulnerabilities": rows, "missing_cve_ids": sorted(wanted - found)}

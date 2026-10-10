@@ -310,7 +310,8 @@ git commit -m "Complete defensive project validation and publication checklist"
 - [x] Raw/processed dumps, .env, caches, logs and DB files ignored; only aggregate artifacts committed.
 - [x] Threat model, separate dataset attribution notices, schema rationale, evaluation caveats and phase commands documented.
 - [ ] Human alias labels and real-world golden answers (cannot truthfully be automated).
-- [ ] Current CISA/NVD/CWE terms/access verification and optional live collection.
+- [x] Official CISA/CWE terms and live KEV/NVD/CWE ingestion, repeated loads and source-reference checks.
+- [ ] Current NVD terms/rate documentation (blocked here), independent human reviews and laptop measurements.
 - [ ] Laptop memory/performance replication.
 - [ ] Remote GitHub Actions run verified (local tests do not prove remote CI completion).
 

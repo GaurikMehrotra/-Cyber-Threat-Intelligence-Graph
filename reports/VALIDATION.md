@@ -2,13 +2,13 @@
 
 These are current cloud-instance measurements, not laptop benchmarks or a claim that remote GitHub Actions completed. Artifacts contain aggregate statistics, not raw feed dumps. The screenshot is the actual local UI using the explicitly synthetic 16-node fixture; a separate browser run also rendered the public/synthetic bounded view (200 nodes, 1,136 edges) and returned 20 phishing search results with no JavaScript errors and no external browser requests.
 
-The final instrumented test run measured **63% source line coverage**; passing tests do not imply every branch is covered. A separate fresh core-only environment passed55 tests and skipped the optional FAISS test; the full CPU-ML environment passed all56 with no skips.
+The earlier instrumented test run measured **63% source line coverage**; passing tests do not imply every branch is covered. A separate fresh core-only environment passed55 tests and skipped the optional FAISS test; the full CPU-ML environment passed all57 with no skips.
 
 ## Functional checks
 
 | Check | Outcome | Scope |
 |---|---|---|
-| Pytest | 56 passing, zero skipped in integration-enabled final run | Offline authored fixtures plus actual Neo4j constraints/idempotence/provenance purge |
+| Pytest | 57 passing, zero skipped in integration-enabled final run | Offline authored fixtures plus actual Neo4j constraints/idempotence/provenance purge |
 | Ruff lint and format | Passed | src, tests, scripts, app |
 | Bandit | Passed | src, app, scripts; narrowly documented false positives for seeded sampling/fixed auditor subprocess |
 | Core pip-audit | No known vulnerabilities, 87 packages directly audited, no skips | Pinned core requirements |
@@ -23,7 +23,9 @@ The final instrumented test run measured **63% source line coverage**; passing t
 | Browser | Passed | Local bundled Cytoscape, defanged values, evidence click, search; false observed-edge dashed styling checked and corrected |
 | STIX2.1 | stix2.parse validated synthetic bundle | Custom weakness/product objects disclosed; actual evidence dates retained |
 | Notebooks | All code cells executed | Three fixture notebooks; no network, no stored raw outputs |
-| Live KEV/NVD/CWE | Not collected | Current authoritative terms/docs blocked by egress; synthetic parsing/linking tested |
+| Live KEV/NVD/CWE | Collected and replay-loaded twice | 1,739 KEV entries, 968 CWE catalog weaknesses, 1,035 recent KEV CVEs from NVD; no missing requested CVEs; current NVD terms docs still inaccessible |
+| Source-reference Cypher | 30/30, accuracy 1.0 | 20 actor technique profiles independently enumerated from raw official STIX, 10 KEV entity checks; not human ground truth |
+| Source-reference aliases | 100 pairs; embedding accepted zero at 0.92 | 50 source alias positives and 50 distinct-STIX-ID negatives; precision/recall 0, false-merge rate undefined because no accepts; no threshold retuning |
 | Laptop peak RAM | Unmeasured | Rerun on user's i3/8GB machine; no fabricated memory guarantee |
 | GitHub Actions | Configured; remote outcome not yet verified | Ephemeral Neo4j service, CPU extras, Ruff, pytest, Bandit and pip-audit |
 
@@ -62,4 +64,8 @@ The individual cloud processes and container measurements support the intended m
 
 ## Remaining independent work
 
-Label the alias CSV and real-world golden queries, confirm current CISA/NVD/CWE terms/rate limits and permitted IOC/report sources before live collection, rerun laptop memory/latency measurements, and inspect the remote Actions run after pushing. Optional real LLM, random-walk classifiers and Kaggle experiments are not enabled or claimed. Source copyright notices and complete release licenses are retained.
+Label the alias CSV and real-world golden queries, confirm current NVD terms/rate limits and permitted additional IOC/report sources, rerun laptop memory/latency measurements, and inspect the remote Actions run after pushing. Optional real LLM, random-walk classifiers and Kaggle experiments are not enabled or claimed. Source copyright notices and complete release licenses are retained.
+
+## Expanded public graph
+
+The complete public/synthetic graph contains **14,441 nodes and 41,399 relationships**. No invalid IOCs or missing node/edge provenance were found. Four shared external technique identifiers are flagged between intentionally separate synthetic records and real ATT&CK entities; canonical Neo4j IDs remain unique. The source-only vulnerability graph has zero duplicate identifiers. Source-only orphan weaknesses are retained rather than inventing links. Full ingestion is distinct from the bounded 3,501-node / 20,206-edge API and semantic-search view: all ATT&CK mapped entities, synthetic demonstration records, and 100 lexicographically newest KEV IDs with their product/weakness context. This is a deterministic selection by CVE identifier, not exploitation recency. The complete graph stays in Neo4j; NetworkX and UI export remain bounded. See live_collection_summary.json and complete_graph_quality.json.

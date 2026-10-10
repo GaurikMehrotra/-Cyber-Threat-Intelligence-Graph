@@ -2,7 +2,7 @@
 
 An evidence-aware, defensive intelligence platform connecting threat actors, malware, tools, campaigns, ATT&CK techniques, CVEs, CWEs, products, reports and inert indicators. Python 3.12, Neo4j Community, NetworkX, MiniLM + FAISS, FastAPI and a locally bundled Cytoscape.js UI. CPU only.
 
-**Implemented across all 19 phases.** A reproducible synthetic demo and tests run without public feeds. Real ATT&CK v16.1/v17.1 data were collected, ingested and temporally evaluated. Live KEV/NVD/CWE collection remains pending current terms verification/access; alias labels, real-world golden answers and laptop memory measurements require independent human work. No results are fabricated. See [validation](reports/VALIDATION.md), [evaluation](docs/EVALUATION.md) and [sources](DATA_SOURCES.md).
+**Implemented across all 19 phases.** A reproducible synthetic demo and tests run without public feeds. Real ATT&CK v16.1/v17.1 data were collected, ingested and temporally evaluated. Full CISA KEV, CWE 4.17 and 1,035 scoped NVD CVEs were collected and loaded. Thirty source-reference Cypher questions pass; a 100-pair source-reference alias evaluation is reported separately from human ground truth. NVD terms-page verification, independent human labels and laptop memory measurements remain external checks. No results are fabricated. See [validation](reports/VALIDATION.md), [evaluation](docs/EVALUATION.md) and [sources](DATA_SOURCES.md).
 
 ![Actual local application screenshot](reports/figures/ui.png)
 
@@ -110,13 +110,17 @@ python -m src.cli index --graph data/processed/public-graph.json   --directory d
 CTIG_INDEX=data/processed/public-index python -m app.app
 ```
 
-After verifying CISA, NVD and CWE terms/access (not verified in the cloud build):
+Full-source workflow (CISA/CWE notices verified; independently check current NVD terms/rate limits):
 
 ```bash
-python -m src.cli collect --accept-source-terms --sources attack kev cwe --with-nvd
+python -m src.cli collect --accept-source-terms --sources attack kev cwe --kev-mirror --with-nvd --output data/processed/complete-public-graph.json
+python -m src.cli load --graph data/processed/complete-public-graph.json
+python -m scripts.service_view
+python -m src.cli index --graph data/processed/service-graph.json --directory data/processed/service-index
+CTIG_SUBGRAPH=data/processed/service-ids.json CTIG_INDEX=data/processed/service-index python -m app.app
 ```
 
-NVD collection can take hours: 6.1 seconds per CVE, cached, recent KEV-referenced CVEs only, <=3,000 requests. A failed publisher request stops collection; already cached ATT&CK snapshots remain available. No IOC publisher is silently selected. Import permissively licensed reports/IOCs **offline**, never by visiting indicator destinations:
+NVD uses paginated `hasKev` results with at least 6.1 seconds between requests, then retains only recent KEV-referenced CVEs. Both the catalog and request counts are bounded at 3,000. Missing CVEs are listed explicitly. A failed publisher request stops collection; already cached ATT&CK snapshots remain available. No IOC publisher is silently selected. Import permissively licensed reports/IOCs **offline**, never by visiting indicator destinations:
 
 ```bash
 python -m src.cli ingest --kind report --input data/fixtures/report.json
@@ -164,7 +168,7 @@ docker stats --no-stream
 python -m scripts.smoke_api
 ```
 
-The label templates deliberately return `unlabeled`/null metrics until reviewed. No zero-test “pass.” See [temporal protocol and limits](docs/EVALUATION.md) and [measured results](reports/VALIDATION.md). Public ATT&CK release changes are not incident-time ground truth. False alias merges are costlier than missed aliases. The prioritization score is a configurable heuristic (KEV .50, CVSS .20, observed degree .15, PageRank .10, optional EPSS .05), with missing inputs disclosed; it is not an exploitation probability.
+The human label templates deliberately return `unlabeled`/null metrics until reviewed. To reproduce the separate source-reference checks, run `python -m scripts.source_reference_eval`, then `python -m src.cli golden --questions data/eval/source_golden_queries.json`. Source-defined labels are not independent human judgments. No zero-test “pass.” See [temporal protocol and limits](docs/EVALUATION.md) and [measured results](reports/VALIDATION.md). Public ATT&CK release changes are not incident-time ground truth. False alias merges are costlier than missed aliases. The prioritization score is a configurable heuristic (KEV .50, CVSS .20, observed degree .15, PageRank .10, optional EPSS .05), with missing inputs disclosed; it is not an exploitation probability.
 
 Purge unsupported data while ingestion is paused:
 
@@ -196,3 +200,5 @@ Folders follow the requested layout: reusable code in src, configuration in conf
 - Optional real LLM and random-walk classifier/Kaggle extensions are not implemented/enabled; the FakeLLM adapter is tested and no paid service is required.
 
 License: MIT for project code and original fixtures. MITRE ATT&CK notices remain separate under licenses/. Cytoscape.js license is bundled with the local JS artifact. See DATA_SOURCES.md before redistributing derived data.
+
+The complete-source service uses `CTIG_SUBGRAPH` for bounded graph analytics, visualization, neighborhood and semantic search. Indexed `/api/entity` lookup accesses any ingested canonical ID, including records outside that view. The selected view is disclosed and does not imply whole-graph analytics.
