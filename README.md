@@ -79,7 +79,7 @@ python - <<'PYCODE'
 import os
 import httpx
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(".env")
 r = httpx.get('http://127.0.0.1:8000/api/search',
     params={'q': 'credential phishing', 'semantic': 'true', 'limit': 5},
     headers={'X-API-Key': os.environ['CTIG_API_KEY']})
