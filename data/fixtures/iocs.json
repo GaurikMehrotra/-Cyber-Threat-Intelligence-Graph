@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "Domain",
+    "value": "example[.]com"
+  },
+  {
+    "kind": "IP",
+    "value": "198[.]51[.]100[.]10"
+  },
+  {
+    "kind": "FileHash",
+    "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+]

@@ -1,0 +1,196 @@
+{
+  "status": "evaluated",
+  "counts": {
+    "train": 3816,
+    "positive": 116,
+    "negative": 135922,
+    "cold_start": 200,
+    "candidates": 136038
+  },
+  "results": [
+    {
+      "method": "common_neighbors",
+      "seed": 17,
+      "roc_auc": 0.7155172413793105,
+      "average_precision": 0.3791345234619541,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.05336664746930197,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "common_neighbors",
+      "seed": 42,
+      "roc_auc": 0.7100921521997623,
+      "average_precision": 0.3934188614350387,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.05336664746930197,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "common_neighbors",
+      "seed": 93,
+      "roc_auc": 0.7159780023781213,
+      "average_precision": 0.36669955353327605,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.05336664746930197,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "jaccard",
+      "seed": 17,
+      "roc_auc": 0.692434601664685,
+      "average_precision": 0.31857933701075286,
+      "hits_at_k": 0.0862120401613036,
+      "mrr": 0.05326873154839847,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "jaccard",
+      "seed": 42,
+      "roc_auc": 0.6841854934601665,
+      "average_precision": 0.32654298365161966,
+      "hits_at_k": 0.0862120401613036,
+      "mrr": 0.05326873154839847,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "jaccard",
+      "seed": 93,
+      "roc_auc": 0.7000594530321046,
+      "average_precision": 0.3293946639016466,
+      "hits_at_k": 0.0862120401613036,
+      "mrr": 0.05326873154839847,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "adamic_adar",
+      "seed": 17,
+      "roc_auc": 0.7163124256837099,
+      "average_precision": 0.38737276564405576,
+      "hits_at_k": 0.07112583326475187,
+      "mrr": 0.05358295904803991,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "adamic_adar",
+      "seed": 42,
+      "roc_auc": 0.7110879904875149,
+      "average_precision": 0.4024883745775109,
+      "hits_at_k": 0.07112583326475187,
+      "mrr": 0.05358295904803991,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "adamic_adar",
+      "seed": 93,
+      "roc_auc": 0.7166765755053508,
+      "average_precision": 0.3762732501261468,
+      "hits_at_k": 0.07112583326475187,
+      "mrr": 0.05358295904803991,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "preferential_attachment",
+      "seed": 17,
+      "roc_auc": 0.7257654577883471,
+      "average_precision": 0.4275529629599206,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.0465987600408377,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "preferential_attachment",
+      "seed": 42,
+      "roc_auc": 0.7179622473246134,
+      "average_precision": 0.432612228001938,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.0465987600408377,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "preferential_attachment",
+      "seed": 93,
+      "roc_auc": 0.7234913793103448,
+      "average_precision": 0.4007744385665648,
+      "hits_at_k": 0.07759135050613118,
+      "mrr": 0.0465987600408377,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "text_embedding",
+      "seed": 17,
+      "roc_auc": 0.5135404280618312,
+      "average_precision": 0.17311974783393466,
+      "hits_at_k": 0.017241379310344827,
+      "mrr": 0.012955823666295744,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "text_embedding",
+      "seed": 42,
+      "roc_auc": 0.4978151010701546,
+      "average_precision": 0.16993425292376688,
+      "hits_at_k": 0.017241379310344827,
+      "mrr": 0.012955823666295744,
+      "k": 10,
+      "sampled_negatives": 580
+    },
+    {
+      "method": "text_embedding",
+      "seed": 93,
+      "roc_auc": 0.5049643281807372,
+      "average_precision": 0.17210846274659442,
+      "hits_at_k": 0.017241379310344827,
+      "mrr": 0.012955823666295744,
+      "k": 10,
+      "sampled_negatives": 580
+    }
+  ],
+  "created_at": "2026-10-10T22:47:52.713587+00:00",
+  "performance": {
+    "evaluation_seconds": 47.02469095799984,
+    "python_peak_rss_bytes": 949149696,
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2@c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "releases": {
+    "old_sources": [
+      "attack:v16.1"
+    ],
+    "new_sources": [
+      "attack:v17.1"
+    ]
+  },
+  "config": {
+    "seeds": [
+      17,
+      42,
+      93
+    ],
+    "negatives_per_positive": 5,
+    "k": 10
+  },
+  "text_baseline": "executed",
+  "caveat": "New ATT&CK assertions are publication-time observations, not dates of attacker activity. Cold-start nodes excluded and disclosed. Predictions are analyst leads, not facts. Negatives are unobserved assertions, not proven false. Ranking uses all older-node candidates; tied ranks averaged. No method tuning.",
+  "release_commits": {
+    "v16.1": "ffcaae13c83d0d9217549ea92855766a36be18c5",
+    "v17.1": "b7612f6854fc4c78e7fad29c3db5503fc8842da8"
+  },
+  "input_sha256": {
+    "v16.1": "ebfe9a5ab6159bcb8082b68bef4ee0a5f70382513581e1522f8f48a73fd6d1f2",
+    "v17.1": "1963539c8e8e3ef928c32be65b9797180338d8d59e38ef2ac4b5edcecc497f60"
+  }
+}

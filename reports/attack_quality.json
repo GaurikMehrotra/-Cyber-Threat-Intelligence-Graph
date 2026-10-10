@@ -1,0 +1,24 @@
+{
+  "node_count": 1980,
+  "edge_count": 18364,
+  "duplicate_identifiers": 0,
+  "orphans": 12,
+  "invalid_iocs": [],
+  "nodes_missing_provenance": 0,
+  "edges_missing_provenance": 0,
+  "counts_by_node_type": {
+    "Malware": 784,
+    "Tool": 93,
+    "Technique": 883,
+    "ThreatActor": 170,
+    "Campaign": 50
+  },
+  "counts_by_relationship_type": {
+    "USES": 18340,
+    "ATTRIBUTED_TO": 24
+  },
+  "source_node_coverage": {
+    "attack:v17.1": 1980
+  },
+  "rejected_indicator_count": 0
+}

@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "index_experiment": {
+    "dataset": "synthetic CTIGBenchmark equality lookup; not production query speed",
+    "nodes": 1000,
+    "unindexed": {
+      "median_ms": 3.9540360000955843,
+      "p95_ms": 29.36328600003435,
+      "median_db_hits": 534.0,
+      "rounds": 20
+    },
+    "indexed": {
+      "median_ms": 2.6479814999902374,
+      "p95_ms": 4.182936999995945,
+      "median_db_hits": 2.0,
+      "rounds": 20
+    }
+  },
+  "ingestion": {
+    "seconds": 11.636369124000112,
+    "items_per_second": 1748.311675507124,
+    "items": 20344
+  },
+  "comparison": {
+    "networkx_all_centrality_seconds": 1.0335227359998953,
+    "cypher_degree_seconds": 0.07799055500004215,
+    "degree_equal": true,
+    "node_count": 100,
+    "caveat": "Different workloads: NetworkX computes three centralities; Cypher computes degree only. Cypher compares selected subgraph degrees; no GDS plugin is assumed."
+  },
+  "python_rss_before_bytes": 235261952,
+  "python_rss_after_bytes": 247869440,
+  "python_peak_rss_bytes": 247590912,
+  "neo4j_memory": "measure with docker stats --no-stream; container includes JVM/off-heap/page cache",
+  "machine": "cloud current instance; laptop measurements must be rerun"
+}

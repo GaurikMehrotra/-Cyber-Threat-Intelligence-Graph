@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "installed_dependencies": 108,
+  "known_vulnerabilities": 0,
+  "own_project_exclusions": [
+    "defensive-ctig: verified editable current project; source checked by Bandit/tests"
+  ],
+  "normalized_cpu_versions": [
+    {
+      "package": "torch",
+      "installed": "2.14.1+cpu",
+      "audited_upstream": "2.14.1",
+      "caveat": "Known advisories for upstream release; local CPU artifact is downloaded from the official verified CPU index."
+    }
+  ],
+  "unexpected_skips": 0
+}

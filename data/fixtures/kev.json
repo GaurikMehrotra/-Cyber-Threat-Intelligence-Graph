@@ -1,0 +1,17 @@
+{
+  "title": "Synthetic KEV-shaped fixture; not real vulnerability intelligence",
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2024-99999",
+      "vendorProject": "Example",
+      "product": "Example Product",
+      "dateAdded": "2024-01-01",
+      "shortDescription": "Synthetic validation vulnerability",
+      "dueDate": "2024-02-01",
+      "requiredAction": "Apply vendor updates",
+      "cwes": [
+        "CWE-79"
+      ]
+    }
+  ]
+}

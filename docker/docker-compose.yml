@@ -1,0 +1,24 @@
+services:
+  neo4j:
+    image: neo4j:5.26.27-community
+    mem_limit: 2g
+    cpus: 2
+    ports:
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env}"
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 768m
+      NEO4J_server_memory_pagecache_size: 512m
+      NEO4J_dbms_memory_transaction_total_max: 128m
+      NEO4J_server_bolt_thread__pool__max__size: 16
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget --spider --quiet http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+volumes:
+  neo4j_data:

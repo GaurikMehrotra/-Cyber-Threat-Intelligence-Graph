@@ -1,0 +1,4 @@
+# CPU torch is installed separately using its official CPU index.
+sentence-transformers>=5,<6
+faiss-cpu>=1.10,<2
+torch==2.14.1+cpu

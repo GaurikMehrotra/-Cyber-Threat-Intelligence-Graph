@@ -1,0 +1,44 @@
+limits:
+  max_nodes: 500
+  max_edges: 3000
+  batch_size: 200
+  max_text_chars: 12000
+  max_request_bytes: 65536
+  api_rows: 100
+  render_nodes: 200
+  pivot_depth: 3
+  hub_degree: 50
+  query_timeout_seconds: 5
+  preview_ttl_seconds: 300
+  rate_limit: 60
+  rate_window_seconds: 60
+  collection_bytes: 100000000
+  collection_requests: 3000
+  download_timeout_seconds: 30
+  download_retries: 3
+  cache_ttl_seconds: 86400
+  nvd_delay_seconds: 6.1
+  feed_delay_seconds: 1.0
+  nvd_years: 5
+  nvd_cve_limit: 3000
+  ioc_limit: 200
+analytics:
+  pagerank_alpha: 0.85
+  betweenness_samples: 100
+  seed: 42
+  priority_degree_scale: 10
+  priority_weights: {kev: 0.5, severity: 0.2, graph: 0.15, centrality: 0.1, epss: 0.05}
+resolution:
+  auto_threshold: 0.92
+  review_threshold: 0.75
+  max_pairs: 1000000
+search:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 16
+  max_documents: 500
+  mode: tfidf
+prediction:
+  seeds: [17, 42, 93]
+  negatives_per_positive: 5
+  k: 10
+  max_candidates: 300000

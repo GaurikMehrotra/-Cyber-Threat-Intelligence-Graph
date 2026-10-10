@@ -1,0 +1,957 @@
+{
+  "nodes": [
+    {
+      "id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "label": "ThreatActor",
+      "properties": {
+        "name": "Example North",
+        "description": "Synthetic phishing credential group",
+        "aliases": [
+          "North Alias"
+        ],
+        "external_id": "",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--13143f49-0210-5935-98ea-9994e4ac5302",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--a6aa7786-72a9-5174-b9cd-9c2c511c588c",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "68d5e95d29d4c780a33e68fa18cd1d164238774b22d05d77a950e093136ebf2d": {
+          "name": "Example North",
+          "description": "Synthetic phishing credential group",
+          "aliases": [
+            "North Alias"
+          ],
+          "external_id": "",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "ec6678c840a315d59780c0482c8b684b086c56b668d83b832adebe8b9aefcb7a": {},
+        "82462ab357a6cb5d21df3b3462a3389e00314990f5d8c3d32631d1e61270c6e0": {}
+      }
+    },
+    {
+      "id": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "label": "ThreatActor",
+      "properties": {
+        "name": "Example South",
+        "description": "Synthetic persistence group",
+        "aliases": [
+          "South Alias"
+        ],
+        "external_id": "",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--89cd8b06-6458-5bc2-bebe-f862c0933336",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "0952d418fe5c7db5f642f2c26f70552b9b15b1eb1d0f412b8024ab388f1952ef": {
+          "name": "Example South",
+          "description": "Synthetic persistence group",
+          "aliases": [
+            "South Alias"
+          ],
+          "external_id": "",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "b3ac61cf04a0cc731063befde6de6e3ec9bc5aa3646e80f636e49e8a8dcd721e": {}
+      }
+    },
+    {
+      "id": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "label": "ThreatActor",
+      "properties": {
+        "name": "Example East",
+        "description": "Synthetic credential phishing actor",
+        "aliases": [
+          "East Alias"
+        ],
+        "external_id": "",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--20be0104-f6dd-5740-a7c7-a56fd55c1ed7",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "4eea41dd845edb01c79c552546ae3180935d64e558d751c6f0baed549ba9bcfe": {
+          "name": "Example East",
+          "description": "Synthetic credential phishing actor",
+          "aliases": [
+            "East Alias"
+          ],
+          "external_id": "",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "8fb4dce705572ed484c1e1db0214fce3c9ec87a8eaf140a2de2bc4f8808bcef6": {}
+      }
+    },
+    {
+      "id": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "label": "Technique",
+      "properties": {
+        "name": "Phishing",
+        "description": "Synthetic phishing delivery",
+        "aliases": [],
+        "external_id": "T1566",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--13143f49-0210-5935-98ea-9994e4ac5302",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--20be0104-f6dd-5740-a7c7-a56fd55c1ed7",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9614f6baedad96caeb2a75abb13c54cdfbe63111d170de02199bc55d4f25ec1b": {
+          "name": "Phishing",
+          "description": "Synthetic phishing delivery",
+          "aliases": [],
+          "external_id": "T1566",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "ec6678c840a315d59780c0482c8b684b086c56b668d83b832adebe8b9aefcb7a": {},
+        "8fb4dce705572ed484c1e1db0214fce3c9ec87a8eaf140a2de2bc4f8808bcef6": {}
+      }
+    },
+    {
+      "id": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "label": "Technique",
+      "properties": {
+        "name": "Credential Access",
+        "description": "Synthetic credential capture",
+        "aliases": [],
+        "external_id": "T1003",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--a6aa7786-72a9-5174-b9cd-9c2c511c588c",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "fb3dd9b3d472ce421acff907239029f2350642a488b756192c0faeaa82f6349a": {
+          "name": "Credential Access",
+          "description": "Synthetic credential capture",
+          "aliases": [],
+          "external_id": "T1003",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "82462ab357a6cb5d21df3b3462a3389e00314990f5d8c3d32631d1e61270c6e0": {}
+      }
+    },
+    {
+      "id": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "label": "Technique",
+      "properties": {
+        "name": "Persistence",
+        "description": "Synthetic persistence behavior",
+        "aliases": [],
+        "external_id": "T1547",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--89cd8b06-6458-5bc2-bebe-f862c0933336",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "fc5e545f7d30e85bf2e9083a2c75b9575688d310d639a16e6bbc916ae869568a": {
+          "name": "Persistence",
+          "description": "Synthetic persistence behavior",
+          "aliases": [],
+          "external_id": "T1547",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "b3ac61cf04a0cc731063befde6de6e3ec9bc5aa3646e80f636e49e8a8dcd721e": {}
+      }
+    },
+    {
+      "id": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+      "label": "Technique",
+      "properties": {
+        "name": "Discovery",
+        "description": "Synthetic host discovery description only",
+        "aliases": [],
+        "external_id": "T1082",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "6d2c76d712c378c5b449a5e0b505ae11b0d46ba9c0e93d7376e0eaf4453df58d": {
+          "name": "Discovery",
+          "description": "Synthetic host discovery description only",
+          "aliases": [],
+          "external_id": "T1082",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        }
+      }
+    },
+    {
+      "id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "label": "Malware",
+      "properties": {
+        "name": "Example Malware",
+        "description": "Synthetic malware family",
+        "aliases": [],
+        "external_id": "",
+        "platforms": [],
+        "tactics": [],
+        "subtechnique": false,
+        "release": "fixture-old"
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "0be411ec35d29b15f09879b0158dd05cc090f7007ab6feb7195264eba7952cfc": {
+          "name": "Example Malware",
+          "description": "Synthetic malware family",
+          "aliases": [],
+          "external_id": "",
+          "platforms": [],
+          "tactics": [],
+          "subtechnique": false,
+          "release": "fixture-old"
+        },
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "Example Malware"
+        }
+      }
+    },
+    {
+      "id": "CVE-2024-99999",
+      "label": "Vulnerability",
+      "properties": {
+        "name": "CVE-2024-99999",
+        "description": "Synthetic injection issue in Example Product",
+        "kev": true,
+        "due_date": "2024-02-01",
+        "required_action": "Apply vendor updates",
+        "cvss": 8.1
+      },
+      "evidence": [
+        {
+          "source": "cisa-kev",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00+00:00",
+          "last_seen": "2024-01-01T00:00:00+00:00",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "nvd",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00.000Z",
+          "last_seen": "2024-01-02T00:00:00.000Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "2f62426cf882113ca19f4245780ad784e521d5d5696b02aad801512163b85b52": {
+          "name": "CVE-2024-99999",
+          "description": "Synthetic validation vulnerability",
+          "kev": true,
+          "due_date": "2024-02-01",
+          "required_action": "Apply vendor updates"
+        },
+        "446dcbe787d0b67ffc38672b195711b6974e25871a8567f5109b620707e798a7": {
+          "name": "CVE-2024-99999",
+          "description": "Synthetic injection issue in Example Product",
+          "cvss": 8.1
+        },
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "CVE-2024-99999"
+        }
+      }
+    },
+    {
+      "id": "product:example:example product",
+      "label": "Product",
+      "properties": {
+        "name": "Example Product",
+        "vendor": "Example"
+      },
+      "evidence": [
+        {
+          "source": "cisa-kev",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00+00:00",
+          "last_seen": "2024-01-01T00:00:00+00:00",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "2f62426cf882113ca19f4245780ad784e521d5d5696b02aad801512163b85b52": {
+          "name": "Example Product",
+          "vendor": "Example"
+        }
+      }
+    },
+    {
+      "id": "CWE-79",
+      "label": "Weakness",
+      "properties": {
+        "name": "CWE-79",
+        "description": "Synthetic CWE-shaped fixture."
+      },
+      "evidence": [
+        {
+          "source": "cisa-kev",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00+00:00",
+          "last_seen": "2024-01-01T00:00:00+00:00",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "nvd",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00.000Z",
+          "last_seen": "2024-01-02T00:00:00.000Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "mitre-cwe",
+          "source_id": "CWE-79",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "2f62426cf882113ca19f4245780ad784e521d5d5696b02aad801512163b85b52": {
+          "name": "CWE-79"
+        },
+        "446dcbe787d0b67ffc38672b195711b6974e25871a8567f5109b620707e798a7": {
+          "name": "CWE-79"
+        },
+        "a9f14464e5413d4d78bfd0178028587254175e16ad4a1cf81e0f2e1c4003cf9f": {
+          "name": "Cross-site scripting",
+          "description": "Synthetic CWE-shaped fixture."
+        }
+      }
+    },
+    {
+      "id": "product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*",
+      "label": "Product",
+      "properties": {
+        "name": "cpe:2.3:a:example:product:*:*:*:*:*:*:*:*"
+      },
+      "evidence": [
+        {
+          "source": "nvd",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00.000Z",
+          "last_seen": "2024-01-02T00:00:00.000Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "446dcbe787d0b67ffc38672b195711b6974e25871a8567f5109b620707e798a7": {
+          "name": "cpe:2.3:a:example:product:*:*:*:*:*:*:*:*"
+        }
+      }
+    },
+    {
+      "id": "report:fixture-report-1",
+      "label": "Report",
+      "properties": {
+        "name": "Synthetic defensive research report",
+        "description": "Example Malware is mentioned alongside example[.]com and 198[.]51[.]100[.]10 and CVE-2024-99999. These co-mentions are not attribution."
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "Synthetic defensive research report",
+          "description": "Example Malware is mentioned alongside example[.]com and 198[.]51[.]100[.]10 and CVE-2024-99999. These co-mentions are not attribution."
+        }
+      }
+    },
+    {
+      "id": "Domain:example.com",
+      "label": "Domain",
+      "properties": {
+        "name": "example.com",
+        "value": "example.com"
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "example.com",
+          "value": "example.com"
+        }
+      }
+    },
+    {
+      "id": "IP:198.51.100.10",
+      "label": "IP",
+      "properties": {
+        "name": "198.51.100.10",
+        "value": "198.51.100.10"
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "198.51.100.10",
+          "value": "198.51.100.10"
+        }
+      }
+    },
+    {
+      "id": "FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "label": "FileHash",
+      "properties": {
+        "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "target": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "type": "USES",
+      "properties": {
+        "original_relationship": "uses",
+        "description": "",
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": ""
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--13143f49-0210-5935-98ea-9994e4ac5302",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "ec6678c840a315d59780c0482c8b684b086c56b668d83b832adebe8b9aefcb7a": {
+          "original_relationship": "uses",
+          "description": "",
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": ""
+        }
+      }
+    },
+    {
+      "source": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "target": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "type": "USES",
+      "properties": {
+        "original_relationship": "uses",
+        "description": "",
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": ""
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--a6aa7786-72a9-5174-b9cd-9c2c511c588c",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "82462ab357a6cb5d21df3b3462a3389e00314990f5d8c3d32631d1e61270c6e0": {
+          "original_relationship": "uses",
+          "description": "",
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": ""
+        }
+      }
+    },
+    {
+      "source": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "target": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "type": "USES",
+      "properties": {
+        "original_relationship": "uses",
+        "description": "",
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": ""
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--89cd8b06-6458-5bc2-bebe-f862c0933336",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "b3ac61cf04a0cc731063befde6de6e3ec9bc5aa3646e80f636e49e8a8dcd721e": {
+          "original_relationship": "uses",
+          "description": "",
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": ""
+        }
+      }
+    },
+    {
+      "source": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "target": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "type": "USES",
+      "properties": {
+        "original_relationship": "uses",
+        "description": "",
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": ""
+      },
+      "evidence": [
+        {
+          "source": "attack:fixture-old",
+          "source_id": "relationship--20be0104-f6dd-5740-a7c7-a56fd55c1ed7",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "8fb4dce705572ed484c1e1db0214fce3c9ec87a8eaf140a2de2bc4f8808bcef6": {
+          "original_relationship": "uses",
+          "description": "",
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": ""
+        }
+      }
+    },
+    {
+      "source": "CVE-2024-99999",
+      "target": "product:example:example product",
+      "type": "AFFECTS",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "cisa-kev",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00+00:00",
+          "last_seen": "2024-01-01T00:00:00+00:00",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "2f62426cf882113ca19f4245780ad784e521d5d5696b02aad801512163b85b52": {}
+      }
+    },
+    {
+      "source": "CVE-2024-99999",
+      "target": "CWE-79",
+      "type": "HAS_WEAKNESS",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "cisa-kev",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00+00:00",
+          "last_seen": "2024-01-01T00:00:00+00:00",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        },
+        {
+          "source": "nvd",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00.000Z",
+          "last_seen": "2024-01-02T00:00:00.000Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "2f62426cf882113ca19f4245780ad784e521d5d5696b02aad801512163b85b52": {},
+        "446dcbe787d0b67ffc38672b195711b6974e25871a8567f5109b620707e798a7": {}
+      }
+    },
+    {
+      "source": "CVE-2024-99999",
+      "target": "product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*",
+      "type": "AFFECTS",
+      "properties": {
+        "version_end_excluding": ""
+      },
+      "evidence": [
+        {
+          "source": "nvd",
+          "source_id": "CVE-2024-99999",
+          "first_seen": "2024-01-01T00:00:00.000Z",
+          "last_seen": "2024-01-02T00:00:00.000Z",
+          "confidence": 1.0,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "446dcbe787d0b67ffc38672b195711b6974e25871a8567f5109b620707e798a7": {
+          "version_end_excluding": ""
+        }
+      }
+    },
+    {
+      "source": "Domain:example.com",
+      "target": "report:fixture-report-1",
+      "type": "MENTIONED_IN",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {}
+      }
+    },
+    {
+      "source": "IP:198.51.100.10",
+      "target": "report:fixture-report-1",
+      "type": "MENTIONED_IN",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {}
+      }
+    },
+    {
+      "source": "FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "target": "report:fixture-report-1",
+      "type": "MENTIONED_IN",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {}
+      }
+    },
+    {
+      "source": "CVE-2024-99999",
+      "target": "report:fixture-report-1",
+      "type": "MENTIONED_IN",
+      "properties": {},
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {}
+      }
+    },
+    {
+      "source": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "target": "Domain:example.com",
+      "type": "COMMUNICATES_WITH",
+      "properties": {
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": "Source assertion, not independent attribution. Shared infrastructure, tools and false flags apply."
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": "Source assertion, not independent attribution. Shared infrastructure, tools and false flags apply."
+        }
+      }
+    },
+    {
+      "source": "Domain:example.com",
+      "target": "IP:198.51.100.10",
+      "type": "RESOLVES_TO",
+      "properties": {
+        "hypothesis": false,
+        "inferred": false,
+        "caveat": "Synthetic offline assertion. No DNS was performed."
+      },
+      "evidence": [
+        {
+          "source": "synthetic-report",
+          "source_id": "fixture-report-1",
+          "first_seen": "2024-01-01T00:00:00Z",
+          "last_seen": "2024-01-01T00:00:00Z",
+          "confidence": 0.7,
+          "ingestion_run_id": "fixture-run"
+        }
+      ],
+      "observations": {
+        "9576136e5cf1a1b71e66b66a82179d4122c0e4aa76d13293415a78598c86f610": {
+          "hypothesis": false,
+          "inferred": false,
+          "caveat": "Synthetic offline assertion. No DNS was performed."
+        }
+      }
+    }
+  ],
+  "rejected": []
+}

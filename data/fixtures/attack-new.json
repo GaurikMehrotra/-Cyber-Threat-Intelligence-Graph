@@ -1,0 +1,158 @@
+{
+  "type": "bundle",
+  "id": "bundle--2fa03481-6920-5f2b-82ab-09505250c70e",
+  "objects": [
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "name": "Example North",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic phishing credential group",
+      "aliases": [
+        "North Alias"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "name": "Example South",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic persistence group",
+      "aliases": [
+        "South Alias"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "name": "Example East",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic credential phishing actor",
+      "aliases": [
+        "East Alias"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "name": "Phishing",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic phishing delivery",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1566"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "name": "Credential Access",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic credential capture",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1003"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "name": "Persistence",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic persistence behavior",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1547"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+      "name": "Discovery",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic host discovery description only",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1082"
+        }
+      ]
+    },
+    {
+      "type": "malware",
+      "id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "name": "Example Malware",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z",
+      "description": "Synthetic malware family",
+      "is_family": true
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--13143f49-0210-5935-98ea-9994e4ac5302",
+      "source_ref": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "target_ref": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a6aa7786-72a9-5174-b9cd-9c2c511c588c",
+      "source_ref": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "target_ref": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--89cd8b06-6458-5bc2-bebe-f862c0933336",
+      "source_ref": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "target_ref": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--20be0104-f6dd-5740-a7c7-a56fd55c1ed7",
+      "source_ref": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "target_ref": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--12dac975-3f3f-523e-8099-7f7f2e871395",
+      "source_ref": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "target_ref": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b11ffcc4-0038-59c8-af03-8a326d52e655",
+      "source_ref": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "target_ref": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+      "relationship_type": "uses",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2024-01-01T00:00:00Z"
+    }
+  ]
+}

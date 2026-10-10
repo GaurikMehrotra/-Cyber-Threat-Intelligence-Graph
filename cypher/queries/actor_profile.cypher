@@ -1,0 +1,1 @@
+MATCH (a:ThreatActor {id: $id})-[r:USES]->(t:Technique) WHERE coalesce(r.inferred, false) = false RETURN t.id AS id, t.name AS name, t.external_id AS external_id, r.evidence AS evidence ORDER BY t.id SKIP $offset LIMIT $limit;

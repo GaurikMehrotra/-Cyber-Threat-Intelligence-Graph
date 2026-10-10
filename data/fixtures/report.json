@@ -1,0 +1,29 @@
+{
+  "source": "synthetic-report",
+  "source_id": "fixture-report-1",
+  "title": "Synthetic defensive research report",
+  "published": "2024-01-01T00:00:00Z",
+  "confidence": 0.7,
+  "text": "Example Malware is mentioned alongside example[.]com and 198[.]51[.]100[.]10 and CVE-2024-99999. These co-mentions are not attribution.",
+  "indicators": [
+    {
+      "kind": "FileHash",
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "assertions": [
+    {
+      "subject": {
+        "id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+        "label": "Malware",
+        "name": "Example Malware"
+      },
+      "object": {
+        "id": "Domain:example.com",
+        "label": "Domain",
+        "name": "example.com"
+      },
+      "relation": "COMMUNICATES_WITH"
+    }
+  ]
+}

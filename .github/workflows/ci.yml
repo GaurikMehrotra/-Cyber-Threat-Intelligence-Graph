@@ -1,0 +1,41 @@
+name: defensive-ctig
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      neo4j:
+        image: neo4j:5.26.27-community
+        env:
+          NEO4J_AUTH: neo4j/ci-${{ github.run_id }}-${{ github.run_attempt }}
+          NEO4J_server_memory_heap_initial__size: 512m
+          NEO4J_server_memory_heap_max__size: 768m
+          NEO4J_server_memory_pagecache_size: 512m
+          NEO4J_dbms_memory_transaction_total_max: 128m
+        ports: [7687:7687, 7474:7474]
+        options: >-
+          --memory=2g
+          --health-cmd "wget --spider --quiet http://localhost:7474 || exit 1"
+          --health-interval 10s --health-timeout 5s --health-retries 30
+    env:
+      NEO4J_URI: bolt://localhost:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: ci-${{ github.run_id }}-${{ github.run_attempt }}
+      CTIG_BACKEND: fixture
+      CTIG_CONFIG: configs/fast_debug.yaml
+      CTIG_INTEGRATION: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt -r requirements-ml.txt --extra-index-url https://download.pytorch.org/whl/cpu
+      - run: python -m scripts.wait_neo4j
+      - run: make lint security
+      - run: python -m pytest --cov=src --cov-report=term-missing -q
+      - run: python -m pip_audit -r requirements.txt
+      - run: python -m scripts.audit_dependencies

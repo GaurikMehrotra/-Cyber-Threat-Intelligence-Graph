@@ -1,0 +1,423 @@
+[
+  {
+    "question": "Does the authored fixture contain intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e?",
+    "template": "entity",
+    "params": {
+      "id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "limit": 1
+    },
+    "expected_ids": [
+      "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef?",
+    "template": "entity",
+    "params": {
+      "id": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "limit": 1
+    },
+    "expected_ids": [
+      "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6?",
+    "template": "entity",
+    "params": {
+      "id": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "limit": 1
+    },
+    "expected_ids": [
+      "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2?",
+    "template": "entity",
+    "params": {
+      "id": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "limit": 1
+    },
+    "expected_ids": [
+      "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c?",
+    "template": "entity",
+    "params": {
+      "id": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "limit": 1
+    },
+    "expected_ids": [
+      "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain attack-pattern--4169ad15-1878-5398-a77a-839a02a68001?",
+    "template": "entity",
+    "params": {
+      "id": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "limit": 1
+    },
+    "expected_ids": [
+      "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412?",
+    "template": "entity",
+    "params": {
+      "id": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+      "limit": 1
+    },
+    "expected_ids": [
+      "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f?",
+    "template": "entity",
+    "params": {
+      "id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "limit": 1
+    },
+    "expected_ids": [
+      "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain CVE-2024-99999?",
+    "template": "entity",
+    "params": {
+      "id": "CVE-2024-99999",
+      "limit": 1
+    },
+    "expected_ids": [
+      "CVE-2024-99999"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain CWE-79?",
+    "template": "entity",
+    "params": {
+      "id": "CWE-79",
+      "limit": 1
+    },
+    "expected_ids": [
+      "CWE-79"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain product:example:example product?",
+    "template": "entity",
+    "params": {
+      "id": "product:example:example product",
+      "limit": 1
+    },
+    "expected_ids": [
+      "product:example:example product"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*?",
+    "template": "entity",
+    "params": {
+      "id": "product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*",
+      "limit": 1
+    },
+    "expected_ids": [
+      "product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain Domain:example.com?",
+    "template": "entity",
+    "params": {
+      "id": "Domain:example.com",
+      "limit": 1
+    },
+    "expected_ids": [
+      "Domain:example.com"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain IP:198.51.100.10?",
+    "template": "entity",
+    "params": {
+      "id": "IP:198.51.100.10",
+      "limit": 1
+    },
+    "expected_ids": [
+      "IP:198.51.100.10"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?",
+    "template": "entity",
+    "params": {
+      "id": "FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "limit": 1
+    },
+    "expected_ids": [
+      "FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "Does the authored fixture contain report:fixture-report-1?",
+    "template": "entity",
+    "params": {
+      "id": "report:fixture-report-1",
+      "limit": 1
+    },
+    "expected_ids": [
+      "report:fixture-report-1"
+    ],
+    "evidence": "scripts/make_fixtures.py; synthetic fixture specification"
+  },
+  {
+    "question": "What direct neighbors does intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "intrusion-set--b083acc7-fcf8-5a3f-a9a5-c0ac360320e6"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does attack-pattern--4169ad15-1878-5398-a77a-839a02a68001 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "attack-pattern--4169ad15-1878-5398-a77a-839a02a68001",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "intrusion-set--e1ab0649-fed0-57d8-ac9d-305cfc2533ef"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "attack-pattern--8b68df14-99cc-563c-bfb6-370ff6b43412",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "Domain:example.com"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does CVE-2024-99999 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "CVE-2024-99999",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "CWE-79",
+      "product:example:example product",
+      "product:cpe:2.3:a:example:product:*:*:*:*:*:*:*:*",
+      "report:fixture-report-1"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does Domain:example.com have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "Domain:example.com",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "malware--3d11fb03-cee4-51b7-a8aa-9c815e1cb98f",
+      "IP:198.51.100.10",
+      "report:fixture-report-1"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does IP:198.51.100.10 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "IP:198.51.100.10",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "Domain:example.com",
+      "report:fixture-report-1"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "What direct neighbors does report:fixture-report-1 have in the authored fixture?",
+    "template": "neighbors",
+    "params": {
+      "id": "report:fixture-report-1",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "CVE-2024-99999",
+      "Domain:example.com",
+      "IP:198.51.100.10",
+      "FileHash:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "evidence": "Independently enumerated fixture edge list"
+  },
+  {
+    "question": "Which observed techniques does Example North use in the synthetic fixture?",
+    "template": "actor_profile",
+    "params": {
+      "id": "intrusion-set--061f6c21-ef5b-5f42-9b95-7391d874ff4e",
+      "offset": 0,
+      "limit": 100
+    },
+    "expected_ids": [
+      "attack-pattern--db9b983b-d988-5aab-a522-f5ad50f1ebc2",
+      "attack-pattern--92671051-e2b6-54af-96d6-c2fda276706c"
+    ],
+    "evidence": "North -> Phishing, Credential Access; scripts/make_fixtures.py"
+  },
+  {
+    "question": "What are the synthetic fixture counts by label?",
+    "template": "counts",
+    "params": {
+      "limit": 100
+    },
+    "expected_rows": [
+      {
+        "label": "Domain",
+        "count": 1
+      },
+      {
+        "label": "FileHash",
+        "count": 1
+      },
+      {
+        "label": "IP",
+        "count": 1
+      },
+      {
+        "label": "Malware",
+        "count": 1
+      },
+      {
+        "label": "Product",
+        "count": 2
+      },
+      {
+        "label": "Report",
+        "count": 1
+      },
+      {
+        "label": "Technique",
+        "count": 4
+      },
+      {
+        "label": "ThreatActor",
+        "count": 3
+      },
+      {
+        "label": "Vulnerability",
+        "count": 1
+      },
+      {
+        "label": "Weakness",
+        "count": 1
+      }
+    ],
+    "evidence": "3 actors + 4 techniques + malware + CVE + CWE + 2 products + 3 IOCs + report = 16"
+  }
+]
